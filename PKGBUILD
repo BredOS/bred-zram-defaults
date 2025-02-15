@@ -1,8 +1,8 @@
 # Maintainer: Bill Sideris <bill88t@bredos.org>
 
 pkgname="bredos-zram-defaults"
-pkgver=1.0
-pkgrel=2
+pkgver=1.1
+pkgrel=1
 arch=('any')
 pkgdesc="BredOS Zram configuration defaults"
 url="https://bredos.org/"
@@ -12,8 +12,8 @@ backup=("etc/sysctl.d/swappiness.conf"
         "etc/systemd/zram-generator.conf")
 source=("swappiness.conf"
         "zram-generator.conf")
-md5sums=('0d4ccddbc957fd80629588cc32740be9'
-         '55a8dce3eb86e8342063589ceba0cc20')
+md5sums=('488dc23efd5bde003869a8c6a3b938a3'
+         'a21e61e0a2da629fd23ea7d2dc1f3430')
 
 package() {
     mkdir -p $pkgdir/etc/sysctl.d $pkgdir/etc/systemd
